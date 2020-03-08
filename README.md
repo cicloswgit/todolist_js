@@ -10,4 +10,5 @@ POC of JS tests with Protractor
 - https://www.protractortest.org/#/
 - https://imasters.com.br/back-end/primeiros-passos-com-protractor
 - https://medium.com/@luizaguerra/primeiros-passos-com-protractor-d909ef80d3a
+- https://www.seleniumeasy.com/protractor-angularjs-tutorials/run-tests-on-multiple-browsers-parallel
 
