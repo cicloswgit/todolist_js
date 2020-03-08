@@ -3,9 +3,11 @@
 const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 module.exports.config = {
   directConnect: true,
-  capabilities: {
-    'browserName': 'chrome',
-  },
+  multiCapabilities: [
+    {'browserName': 'chrome'},
+    {'browserName': 'firefox'},
+  ],
+  framework: 'jasmine',
   specs: ['specs/*.spec.js'],
   baseUrl: 'https://angularjs.org',
   onPrepare() {
@@ -15,5 +17,8 @@ module.exports.config = {
       displaySuiteNumber: true,
       displaySpecDuration: true
     }));
+  },
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 30000
   }
 };
